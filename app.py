@@ -1,7 +1,8 @@
 import streamlit as st
 
-db_user = st.secrets["database"]["user"]
-db_password = st.secrets["database"]["password"]
+#db_user = st.secrets["database"]["user"]
+#db_password = st.secrets["database"]["password"]
 
 
-print(db_user, db_password)
+#print(db_user, db_password)
+st.write('# Teste')
