@@ -102,7 +102,8 @@ def nome_fantasia(dic_usuario, nome):
 # xxx
 def mostrar_frequencia():
     st.markdown("## 📊 Frequência de Participações")
-    caminho_csv = r'C://docarlos//quadro_flamboyant_teste//teste_streamlit//analise.csv'
+    #caminho_csv = r'C://docarlos//quadro_flamboyant_teste//teste_streamlit//analise.csv'
+    caminho_csv = 'analise.csv'
 
     try:
         df = pd.read_csv(caminho_csv, sep=';', encoding='latin1')
