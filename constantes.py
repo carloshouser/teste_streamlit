@@ -79,8 +79,10 @@ quadros = {
 # Dados de usuários e permissões
 usuarios = {
     "Jerome": {"senha": "jjj", "permissoes": ["a", "b", "c", "d", "e", "f", "g"], "sexo": "M"},
-    "Carlos": {"senha": "ccc", "permissoes": ["a", "b", "c", "d", "e", "f", "g"], "sexo": "M"},
+    "Carlos": {"senha": "ccc", "permissoes": ["a", "b", "c", "d", "e", "f", "g", "frequencia"], "sexo": "M"},
     "Elber": {"senha": "eee", "permissoes": ["a", "b", "c", "d", "e", "f", "g"], "sexo": "M"},
     "Lidyane": {"senha": "lll", "permissoes": ["a", "b", "c", "d", "e", "f", "g"], "sexo": "F"},
+
+
     
 }

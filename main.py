@@ -8,7 +8,9 @@
 
 
 # Importações
+import pandas as pd
 import streamlit as st
+import plotly.express as px
 import json
 import base64
 from constantes import usuarios, estilo, quadros
@@ -67,8 +69,6 @@ def reset_sessao():
     st.rerun()
 
 # Renderizações
-
-
 def render_login():
     """
     Renderiza a tela de login.
@@ -99,6 +99,67 @@ def nome_fantasia(dic_usuario, nome):
     else:
         return f"irmã {nome}"
 
+# xxx
+def mostrar_frequencia():
+    st.markdown("## 📊 Frequência de Participações")
+    caminho_csv = r'C://docarlos//quadro_flamboyant_teste//teste_streamlit//analise.csv'
+
+    try:
+        df = pd.read_csv(caminho_csv, sep=';', encoding='latin1')
+        df['Data'] = pd.to_datetime(df['Data'], format='%d/%m/%y')
+    except Exception as e:
+        st.error(f"Erro ao carregar o CSV: {e}")
+        return
+
+    # Filtro por data
+    data_minima = df['Data'].min().date()
+    data_maxima = df['Data'].max().date()
+    data_inicial = st.date_input(
+        "Mostrar participações a partir de:",
+        value=data_minima,
+        min_value=data_minima,
+        max_value=data_maxima
+    )
+    st.markdown(f"📅 **Data selecionada:** `{data_inicial.strftime('%d/%m/%Y')}`")
+    df = df[df['Data'] >= pd.to_datetime(data_inicial)]
+
+    # Formato longo
+    df_long = df.melt(id_vars=['Data'], var_name='modalidade', value_name='nome')
+    df_long = df_long.dropna()
+    df_long['nome'] = df_long['nome'].str.strip()
+
+    # Contagem
+    df_participacoes = df_long.groupby(['nome', 'modalidade']).size().reset_index(name='qtd')
+    df_participacoes['qtd'] = df_participacoes['qtd'].astype(int)
+
+    # Filtros
+    nomes = st.multiselect("🔍 Filtrar por nome(s):", sorted(df_participacoes['nome'].unique()))
+    modalidades = st.multiselect("🎤 Filtrar por modalidade:", sorted(df_participacoes['modalidade'].unique()))
+
+    df_filtrado = df_participacoes.copy()
+    if nomes:
+        df_filtrado = df_filtrado[df_filtrado['nome'].isin(nomes)]
+    if modalidades:
+        df_filtrado = df_filtrado[df_filtrado['modalidade'].isin(modalidades)]
+
+    # Gráfico
+    fig = px.bar(
+        df_filtrado.sort_values(by='nome'),
+        x='qtd',
+        y='nome',
+        color='modalidade',
+        orientation='h',
+        title='Participações por Pessoa e Modalidade',
+        labels={'qtd': 'Qtd. Participações', 'nome': 'Participante'},
+        height=600
+    )
+
+    fig.update_layout(
+        xaxis=dict(tickmode='linear', tick0=0, dtick=1),
+        yaxis=dict(categoryorder='category ascending')
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
 
 def render_home():
     """
@@ -130,6 +191,12 @@ def render_home():
 
     render_quadros(["a", "b", "c"], col1)
     render_quadros(["d", "e", "f", "g"], col2)
+
+    #xxx
+    if "frequencia" in permissoes:
+        if st.button("📊 Frequência de Participações"):
+            st.session_state["pagina"] = "frequencia"
+            st.rerun()
 
     st.divider()
     st.write('### Designações')
@@ -241,6 +308,9 @@ else:
             render_home()
         elif st.session_state.get("pagina") == "visualizar":
             render_visualizar()
+        # xxx            
+        elif st.session_state.get("pagina") == "frequencia":
+            mostrar_frequencia()
 
     with tab2:
         render_eventos(events)
