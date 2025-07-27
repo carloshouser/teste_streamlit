@@ -176,6 +176,10 @@ def mostrar_frequencia():
 
     st.plotly_chart(fig, use_container_width=True)
 
+    if st.button("Início"):
+        st.session_state["pagina"] = "home"
+        st.rerun()
+
 def render_home():
     """
     Renderiza a página principal com os quadros de anúncios.
