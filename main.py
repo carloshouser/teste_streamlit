@@ -112,43 +112,51 @@ def mostrar_frequencia():
         st.error(f"Erro ao carregar o CSV: {e}")
         return
 
-    # Filtro por data
+    # Filtro por data inicial
     data_minima = df['Data'].min().date()
     data_maxima = df['Data'].max().date()
     data_inicial = st.date_input(
         "Mostrar participações a partir de:",
         value=data_minima,
         min_value=data_minima,
-        max_value=data_maxima
+        max_value=data_maxima,
+        format="DD/MM/YYYY"
     )
-    st.markdown(f"📅 **Data selecionada:** `{data_inicial.strftime('%d/%m/%Y')}`")
-    df = df[df['Data'] >= pd.to_datetime(data_inicial)]
+    
+    if data_inicial is not None:
+        # Aplica o filtro apenas se a data for válida
+        df = df[df['Data'] >= pd.to_datetime(data_inicial)]
+
+        # Exibe a data no formato dd/mm/yyyy
+        st.markdown(f"📆 **Data selecionada:** '{data_inicial.strftime('%d/%m/%Y')}'")    
+    else:
+        st.warning("Por favor, selecione uma data válida.")
 
     # Formato longo
-    df_long = df.melt(id_vars=['Data'], var_name='modalidade', value_name='nome')
+    df_long = df.melt(id_vars=['Data'], var_name='Modalidade', value_name='nome')
     df_long = df_long.dropna()
     df_long['nome'] = df_long['nome'].str.strip()
 
     # Contagem
-    df_participacoes = df_long.groupby(['nome', 'modalidade']).size().reset_index(name='qtd')
+    df_participacoes = df_long.groupby(['nome', 'Modalidade']).size().reset_index(name='qtd')
     df_participacoes['qtd'] = df_participacoes['qtd'].astype(int)
 
     # Filtros
     nomes = st.multiselect("🔍 Filtrar por nome(s):", sorted(df_participacoes['nome'].unique()))
-    modalidades = st.multiselect("🎤 Filtrar por modalidade:", sorted(df_participacoes['modalidade'].unique()))
+    modalidades = st.multiselect("🎤 Filtrar por modalidade:", sorted(df_participacoes['Modalidade'].unique()))
 
     df_filtrado = df_participacoes.copy()
     if nomes:
         df_filtrado = df_filtrado[df_filtrado['nome'].isin(nomes)]
     if modalidades:
-        df_filtrado = df_filtrado[df_filtrado['modalidade'].isin(modalidades)]
+        df_filtrado = df_filtrado[df_filtrado['Modalidade'].isin(modalidades)]
 
     # Gráfico
     fig = px.bar(
         df_filtrado.sort_values(by='nome'),
         x='qtd',
         y='nome',
-        color='modalidade',
+        color='Modalidade',
         orientation='h',
         title='Participações por Pessoa e Modalidade',
         labels={'qtd': 'Qtd. Participações', 'nome': 'Participante'},
@@ -156,8 +164,14 @@ def mostrar_frequencia():
     )
 
     fig.update_layout(
-        xaxis=dict(tickmode='linear', tick0=0, dtick=1),
-        yaxis=dict(categoryorder='category ascending')
+        xaxis=dict(
+            tickmode='linear',
+            tick0=0,
+            dtick=1  # força inteiros no eixo X
+        ),
+        yaxis=dict(
+            categoryorder='category descending'  # ordena nomes alfabeticamente
+        )
     )
 
     st.plotly_chart(fig, use_container_width=True)
