@@ -535,6 +535,3 @@ else:
 
     with tab2:
         render_eventos(events)
-
-print('Teste')
-get_xml_servico()        
