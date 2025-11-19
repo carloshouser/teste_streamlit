@@ -241,7 +241,7 @@ def xml_servico_to_csv():
 
     # Salvando o CSV com separador ";"
     df.to_csv("analise.csv", sep=";", index=False, encoding="latin1")
-    print("Arquivo 'saida.csv' gerado com sucesso!")
+    print("Arquivo 'analise.csv' gerado com sucesso!")
     
 
 def render_header():
