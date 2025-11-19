@@ -1,7 +1,7 @@
 from datetime import datetime
 
 parametros = {
-    'path': 'C://doCarlos//escola_xml_read',    
+    'path': '/workspaces/teste_streamlit',    
 }
 
 # Lista de nomes válidos para apresentações

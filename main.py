@@ -506,17 +506,17 @@ if "logado" not in st.session_state:
     st.session_state["pagina"] = "login"
 
 # Verificar se já tem login salvo nos cookies
-if not st.session_state["logado"]:
-    usuario_cookie = cookies.get("usuario")
-    senha_cookie = cookies.get("senha")
-    if usuario_cookie and senha_cookie:
-        if autenticar_usuario(usuario_cookie, senha_cookie):
-            st.session_state.update({
-                "logado": True,
-                "usuario": usuario_cookie,
-                "pagina": "home"
-            })
-            st.rerun()
+# if not st.session_state["logado"]:
+#     usuario_cookie = cookies.get("usuario")
+#     senha_cookie = cookies.get("senha")
+#     if usuario_cookie and senha_cookie:
+#         if autenticar_usuario(usuario_cookie, senha_cookie):
+#             st.session_state.update({
+#                 "logado": True,
+#                 "usuario": usuario_cookie,
+#                 "pagina": "home"
+#             })
+#             st.rerun()
 
 # Decidir o que mostrar
 if not st.session_state["logado"]:
@@ -535,3 +535,6 @@ else:
 
     with tab2:
         render_eventos(events)
+
+print('Teste')
+get_xml_servico()        
