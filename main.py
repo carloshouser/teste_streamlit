@@ -8,6 +8,12 @@
 
 
 # Importações
+import os
+import xml.etree.ElementTree as ET
+from utilitarios import parametros
+from utilitarios import nomes_validos
+from utilitarios import converter_data
+
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -42,6 +48,201 @@ def load_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
 
+def get_xml_servico():
+
+    def _listar_arquivos_xml():
+        path_xml = parametros['path']
+        lista_xml = [f for f in os.listdir(path_xml) if f.endswith('.xml')]
+        for xml in lista_xml:
+            if not _validar_xml(xml):
+                return
+        return lista_xml
+    
+    def _validar_xml(caminho_arquivo: str) -> bool:
+        """
+        ET.parse garante que o XML esteja bem formado (senão lança ParseError).
+        root.tag valida o nó raiz.
+        find permite verificar a existência de nós obrigatórios (Settings, LanguageCode).
+        Retorna True se tudo estiver correto, ou False com mensagens explicativas.
+        """
+        try:
+            # Tenta carregar e parsear o XML
+            tree = ET.parse(caminho_arquivo)
+            root = tree.getroot()
+
+            # Verifica se o nó raiz é MeetingWorkBook
+            if root.tag != "MeetingWorkBook":
+                print(f"Nó raiz inválido: esperado 'MeetingWorkBook', encontrado '{root.tag}'")
+                return False
+
+            # Verifica se existe o nó <Settings>
+            settings = root.find("Settings")
+            if settings is None:
+                print("Nó <Settings> não encontrado.")
+                return False
+
+            # Verifica se existe o nó <LanguageCode> dentro de <Settings>
+            lang = settings.find("LanguageCode")
+            if lang is None or not lang.text:
+                print("Nó <LanguageCode> não encontrado ou vazio.")
+                return False
+
+            # Se passou por todas as verificações
+            print("XML válido.")
+            return True
+
+        except ET.ParseError as e:
+            print(f"Erro de parsing: XML malformado. Detalhes: {e}")
+            return False
+        except FileNotFoundError:
+            print("Arquivo não encontrado.")
+            return False
+    
+    _lista_de_xml = _listar_arquivos_xml()
+
+    if not _lista_de_xml:
+        return 
+    
+    # Inicialize a lista de participantes
+    lst_designacoes = []
+
+    for arquivo in _lista_de_xml:
+        caminho_xml = os.path.join(arquivo)
+        tree = ET.parse(caminho_xml)
+        root = tree.getroot()
+
+        # Iterar sobre cada "Meeting" para capturar suas informações
+        for meeting in root.findall(".//Meeting"):
+            
+            reuniao = {}
+
+            # Capturar a data específica do Meeting
+            data_atributo = meeting.find("Date").attrib.get("ThisWeek")
+
+            # Formatar para DD/MM/AAAA
+            data_formatada = f"{data_atributo[7:9]}/{data_atributo[5:7]}/{data_atributo[3:5]}"
+
+            reuniao["data"] = data_formatada
+
+            # Capturar informações principais do Meeting
+            chairman = meeting.find("Chairman").text if meeting.find(
+                "Chairman") is not None else ""
+
+            prayer_open = meeting.find("PrayerOpen").text if meeting.find(
+                "PrayerOpen") is not None else ""                                
+
+            prayer_end = meeting.find(
+                ".//PrayerEnd").text if meeting.find(".//PrayerEnd") is not None else ""                
+            
+            # Atualizar informações no dicionário de designações
+            if chairman in nomes_validos:
+                reuniao["presidencia"] = chairman
+            else:
+                print(f'Participante {chairman} não permitido' )
+                return
+            
+            if prayer_open in nomes_validos:
+                reuniao["oracao_inicial"] = prayer_open
+            else:
+                print(f'Participante {prayer_open} não permitido' )
+                return
+
+            if prayer_end in nomes_validos:
+                reuniao["oracao_final"] = prayer_end
+            else:
+                print(f'Participante {prayer_end} não permitido' )
+                return
+
+            # Capturar informações do TFGW
+            tfgw_items = meeting.findall(".//TFGWItem")
+            for tfgw_item in tfgw_items:
+                index = tfgw_item.attrib.get("Index")
+                name = tfgw_item.find("Name").text if tfgw_item.find(
+                    "Name") is not None else ""
+                if name:
+                    if name in nomes_validos:
+                        if index == '1':
+                            reuniao["Tesouros"] = name
+                        elif index == '2':
+                            reuniao["Joias"] = name
+                    else:
+                        print(f'Participante {name} não permitido')
+                        return
+
+
+            # Capturar informações do LAC
+            lac_items = meeting.findall(".//LACItem")
+            discurso_lac = 1
+            for lac_item in lac_items:
+                name = lac_item.find("Name").text if lac_item.find(
+                    "Name") is not None else ""
+                if name:
+                    if name in nomes_validos:
+                        if discurso_lac == 1:
+                            reuniao["discurso1"] = name
+                        if discurso_lac == 2:
+                            reuniao["discurso2"] = name
+                        if discurso_lac == 3:
+                            reuniao["discurso3"] = name
+                    else:
+                        print(f'Participante {name} não permitido')
+                        return
+
+            # Capturar informações do CongregationBibleStudy
+            cbs = meeting.find(".//CongregationBibleStudy")
+
+            # conductor = cbs.find("Conductor").text if cbs and cbs.find("Conductor") is not None else ""
+            conductor = cbs.find("Conductor").text if cbs is not None and cbs.find(
+                "Conductor") is not None else ""
+            
+            # reader = cbs.find("Reader").text if cbs and cbs.find("Reader") is not None else ""
+            reader = cbs.find("Reader").text if cbs is not None and cbs.find(
+                "Reader") is not None else ""                
+            
+            if conductor:
+                if conductor in nomes_validos:
+                    reuniao["estudo"] = conductor
+                else:
+                    print(f'Participante {conductor} não permitido')
+                    return
+
+            if reader:
+                if reader in nomes_validos:
+                    reuniao['leitor'] = reader
+                else:
+                    print(f'Participante {reader} não permitido')
+                    return
+
+            lst_designacoes.append(reuniao)
+                
+    return lst_designacoes
+
+def xml_servico_to_csv():
+
+    minha_lista_de_dicionarios = get_xml_servico()
+    linhas_formatadas = []
+
+    for d in minha_lista_de_dicionarios:
+        
+        linhas_formatadas.append({
+            "Data": d["data"],                     # já está no formato dd/mm/yyyy
+            "Presidencia": d["presidencia"],
+            "Oracao Inicial": d["oracao_inicial"],
+            "Tesouros": d["Tesouros"],
+            "Joias": d["Joias"],
+            "Discurso1": d["discurso1"],
+            "Discurso2": "",                        # campo vazio
+            "Estudo": d["estudo"],
+            "Leitor": d["leitor"],
+            "Oracao Final": d["oracao_final"]
+        })
+
+    df = pd.DataFrame(linhas_formatadas)
+
+    # Salvando o CSV com separador ";"
+    df.to_csv("analise.csv", sep=";", index=False, encoding="latin1")
+    print("Arquivo 'saida.csv' gerado com sucesso!")
+    
 
 def render_header():
     """
@@ -101,6 +302,7 @@ def nome_fantasia(dic_usuario, nome):
 
 # xxx
 def mostrar_frequencia():
+    xml_servico_to_csv()
     st.markdown("## 📊 Frequência de Participações")
     #caminho_csv = r'C://docarlos//quadro_flamboyant_teste//teste_streamlit//analise.csv'
     caminho_csv = 'analise.csv'
