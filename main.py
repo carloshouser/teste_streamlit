@@ -9,6 +9,7 @@
 
 # Importações
 import os
+from pathlib import Path
 import xml.etree.ElementTree as ET
 from utilitarios import parametros
 from utilitarios import nomes_validos
