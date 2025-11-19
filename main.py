@@ -51,7 +51,13 @@ def load_json(file_path):
 def get_xml_servico():
 
     def _listar_arquivos_xml():
-        path_xml = parametros['path']
+        base_dir = Path(__file__).resolve().parent
+        if path_xml is None:
+            path_xml = base_dir / "xml"  # ajuste o nome do diretório se for outro
+        else:            
+            path_xml = Path(path_xml)
+
+        
         lista_xml = [f for f in os.listdir(path_xml) if f.endswith('.xml')]
         for xml in lista_xml:
             if not _validar_xml(xml):
