@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Workbook-S-140.xsl"?>
+<MeetingWorkBook>
+    <Settings>
+        <LanguageCode>pt-BR</LanguageCode>
+        <Direction>ltr</Direction>
+        <EditorMode>0</EditorMode>
+        <ForeignGroupMode>0</ForeignGroupMode>
+        <Now Day="18" Month="11" Year="2025"/>
+        <StartDate Day="3" Month="11" Year="2025"/>
+        <EndDate Day="30" Month="11" Year="2025"/>
+        <Use24HourFormat>1</Use24HourFormat>
+        <UseStartTime>1</UseStartTime>
+    </Settings>
+    <Labels>
+        <Congregation></Congregation>
+        <Title>Programação da reunião do meio de semana</Title>
+        <ReportTitle1>NOSSA VIDA E MINISTÉRIO CRISTÃO</ReportTitle1>
+        <ReportTitle2>(Reunião de Meio de Semana novembro 2025)</ReportTitle2>
+        <TFGW>TESOUROS DA PALAVRA DE DEUS</TFGW>
+        <AYFM>FAÇA SEU MELHOR NO MINISTÉRIO</AYFM>
+        <LAC>NOSSA VIDA CRISTÃ</LAC>
+        <Note>Nota</Note>
+        <Song>Cântico</Song>
+        <Prayer>Oração:</Prayer>
+        <PrayerBread>Oração (Pão):</PrayerBread>
+        <PrayerWine>Oração (Vinho):</PrayerWine>
+        <Chairman>Presidente:</Chairman>
+        <Counsellor>Conselheiro</Counsellor>
+        <AuxCounsellor>Conselheiro da sala B:</AuxCounsellor>
+        <AuxCounsellor1>Conselheiro da sala B:</AuxCounsellor1>
+        <AuxCounsellor2>Conselheiro da sala C:</AuxCounsellor2>
+        <BibleReadingStudent>Estudante:</BibleReadingStudent>
+        <Student>Estudante:</Student>
+        <Assistant>Ajudante:</Assistant>
+        <MainHall>Salão principal</MainHall>
+        <AuxClass>Sala B</AuxClass>
+        <AuxClass1>Sala B</AuxClass1>
+        <AuxClass2>Sala C</AuxClass2>
+        <VideoConferenceHost>Anfitrião:</VideoConferenceHost>
+        <VideoConferenceCohost>Co-anfitrião:</VideoConferenceCohost>
+        <ZoomAttendant>Indicador do Zoom:</ZoomAttendant>
+        <CBS>Estudo Bíblico de Congregação</CBS>
+        <Conductor>Dirigente:</Conductor>
+        <Reader>Leitor:</Reader>
+        <ReviewQuestion>Pergunta de recapitulação:</ReviewQuestion>
+        <NextReviewQuestion>Pergunta de recapitulação (próxima semana):</NextReviewQuestion>
+        <BibleVersesReader>Leitor dos textos Bíblicos:</BibleVersesReader>
+        <PersonalCopy>Cópia Pessoal:</PersonalCopy>
+        <Announcements>Anúncios</Announcements>
+        <Discussion>Consideração</Discussion>
+        <PTS_WeekendMeeting>Reunião do fim de semana</PTS_WeekendMeeting>
+        <PTS_Talk>Discurso Público</PTS_Talk>
+        <PTS_Theme>Tema</PTS_Theme>
+        <PTS_Speaker>Orador</PTS_Speaker>
+        <PTS_Speakers>Oradores</PTS_Speakers>
+        <PTS_Congregation>Congregação</PTS_Congregation>
+        <PTS_Chairman>Presidente</PTS_Chairman>
+        <PTS_WTConductor>Dirigente</PTS_WTConductor>
+        <PTS_WTReader>Leitor</PTS_WTReader>
+        <PTS_WTStudy>Estudo de A Sentinela</PTS_WTStudy>
+        <PTS_Hospitality>Hospitalidade</PTS_Hospitality>
+        <PTS_AwaySpeaker>Orador que sairá</PTS_AwaySpeaker>
+        <PTS_ServiceTalk>Discurso de Serviço</PTS_ServiceTalk>
+        <PTS_WeekendMeetingReportTitle>Programa para a Reunião de Fim de Semana</PTS_WeekendMeetingReportTitle>
+        <MeetingsForFieldService>Reuniões Para O Serviço De Campo</MeetingsForFieldService>
+        <Location>Localização</Location>
+        <Time>Hora</Time>
+    </Labels>
+    <Meeting BookmarkId="0" PageBreak="0" NumberClasses="1" SpecialEvent="0" CircuitVisit="0">
+        <Date ThisWeek="W20251103" NextWeek="W20251110">3-9 de novembro</Date>
+        <WeeklyBibleReading>CÂNTICO DE SALOMÃO 1-2</WeeklyBibleReading>
+        <ReviewQuestion></ReviewQuestion>
+        <MeetingDate Day="6" DayShort="qui" DayFull="quinta-feira" Month="11" MonthShort="nov" MonthFull="novembro" Year="2025">06/11/2025</MeetingDate>
+        <ChairmanNotes>
+            <OpeningComments/>
+            <ClosingComments IncludeNextWeeksStudents="0"/>
+        </ChairmanNotes>
+        <Chairman>Edson Padilha</Chairman>
+        <VideoConferenceHost></VideoConferenceHost>
+        <VideoConferenceCohost></VideoConferenceCohost>
+        <ZoomAttendant></ZoomAttendant>
+        <SongOpen Title="Nós somos um" StartTime12="7:45" StartTime24="19:45" EndTime12="7:50" EndTime24="19:50" DurationShort="5 min." Duration="5">132</SongOpen>
+        <PrayerOpen>David Affonso</PrayerOpen>
+        <OpeningComments>
+            <Theme>Comentários iniciais</Theme>
+            <Time StartTime12="7:50" StartTime24="19:50" EndTime12="7:51" EndTime24="19:51" DurationShort="1 min." Duration="1">1 min.</Time>
+        </OpeningComments>
+        <TFGW NumberClasses="1">
+            <TFGWItem Index="1">
+                <Theme>Uma história de amor verdadeiro</Theme>
+                <Method>Discurso</Method>
+                <Name>Carlos Alberto</Name>
+                <Time StartTime12="7:51" StartTime24="19:51" EndTime12="8:01" EndTime24="20:01" DurationShort="10 min." Duration="10">10 min.</Time>
+            </TFGWItem>
+            <TFGWItem Index="2">
+                <Theme>Joias espirituais</Theme>
+                <Method>Perguntas e Respostas</Method>
+                <Name>Aron Stachecka</Name>
+                <Time StartTime12="8:01" StartTime24="20:01" EndTime12="8:11" EndTime24="20:11" DurationShort="10 min." Duration="10">10 min.</Time>
+            </TFGWItem>
+            <BibleReadingItem Index="3">
+                <Type>Leitura da Bíblia</Type>
+                <Material StudyPoint="12" StudyPointReference="(Melhore lição 12)">Cân. 2:1-17</Material>
+                <Time StartTime12="8:12" StartTime24="20:12" EndTime12="8:16" EndTime24="20:16" DurationShort="4 min." Duration="4">4 min ou menos</Time>
+                <Readers>
+                    <Reader StudyPoint="12" StudyPointDescription="Seja simpático e mostre que se importa" Class="1">Herminio Maciel</Reader>
+                </Readers>
+            </BibleReadingItem>
+        </TFGW>
+        <AYFM NumberClasses="1">
+            <StudentItem Index="4" IsTalk="0" IsSampleVideo="0">
+                <Type>Iniciando conversas</Type>
+                <Material Brochure="lmd" Lesson="1" StudyPoint="3" StudyPointReference="(lmd lição 1 ponto 3)">DE CASA EM CASA. Fale sobre uma das verdades do apêndice A da brochura Ame as Pessoas.</Material>
+                <Time StartTime12="8:17" StartTime24="20:17" EndTime12="8:20" EndTime24="20:20" DurationShort="3 min." Duration="3">3 min ou menos</Time>
+                <Students Class="1">
+                    <Student Lesson="1" StudyPoint="3" StudyPointDescription="Interesse pelas pessoas">Jahina Gonçalves</Student>
+                    <Assistant>Roseli de Julio</Assistant>
+                </Students>
+            </StudentItem>
+            <StudentItem Index="5" IsTalk="0" IsSampleVideo="0">
+                <Type>Cultivando o interesse</Type>
+                <Material Brochure="lmd" Lesson="9" StudyPoint="3" StudyPointReference="(lmd lição 9 ponto 3)">DE CASA EM CASA. Fale sobre uma das verdades do apêndice A da brochura Ame as Pessoas.</Material>
+                <Time StartTime12="8:21" StartTime24="20:21" EndTime12="8:25" EndTime24="20:25" DurationShort="4 min." Duration="4">4 min ou menos</Time>
+                <Students Class="1">
+                    <Student Lesson="9" StudyPoint="3" StudyPointDescription="Empatia">Maria da Luz</Student>
+                    <Assistant>Noêmia Melo</Assistant>
+                </Students>
+            </StudentItem>
+            <StudentItem Index="6" IsTalk="0" IsSampleVideo="0">
+                <Type>Fazendo discípulos</Type>
+                <Material Brochure="th" StudyPoint="8" StudyPointReference="(Melhore lição 8)"> lff lição 18 introdução e pontos 1-3</Material>
+                <Time StartTime12="8:26" StartTime24="20:26" EndTime12="8:31" EndTime24="20:31" DurationShort="5 min." Duration="5">5 min ou menos</Time>
+                <Students Class="1">
+                    <Student StudyPoint="8" StudyPointDescription="Ensine com ilustrações">Silmara Spina</Student>
+                    <Assistant>Santina Gobato</Assistant>
+                </Students>
+            </StudentItem>
+        </AYFM>
+        <LAC CircuitVisit="0" CircuitVisitGroup="0">
+            <SongMiddle Title="Obrigado, Jeová!" StartTime12="8:32" StartTime24="20:32" EndTime12="8:37" EndTime24="20:37" DurationShort="5 min." Duration="5">46</SongMiddle>
+            <LACItem Index="7">
+                <Name>Sergio Santos</Name>
+                <Theme>“A pessoa generosa será abençoada”</Theme>
+                <Method>Consideração</Method>
+                <Time StartTime12="8:37" StartTime24="20:37" EndTime12="8:52" EndTime24="20:52" DurationShort="15 min." Duration="15">15 min.</Time>
+            </LACItem>
+            <CongregationBibleStudy Index="8">
+                <Conductor>Josnei Machado</Conductor>
+                <Reader>Luiz Eleutério</Reader>
+                <SourceMaterial>lfb histórias 32-33</SourceMaterial>
+                <Time StartTime12="8:52" StartTime24="20:52" EndTime12="9:22" EndTime24="21:22" DurationShort="30 min." Duration="30">30 min ou menos</Time>
+            </CongregationBibleStudy>
+            <ClosingComments>
+                <Theme>Comentários finais</Theme>
+                <Time StartTime12="9:22" StartTime24="21:22" EndTime12="9:25" EndTime24="21:25" DurationShort="3 min." Duration="3">3 min ou menos</Time>
+            </ClosingComments>
+            <SongEnd Title="Mulheres fiéis" StartTime12="9:25" StartTime24="21:25" EndTime12="9:30" EndTime24="21:30" DurationShort="5 min." Duration="5">137</SongEnd>
+            <PrayerEnd>Marcos Ribeiro</PrayerEnd>
+        </LAC>
+    </Meeting>
+    <Meeting BookmarkId="1" PageBreak="0" NumberClasses="1" SpecialEvent="0" CircuitVisit="0">
+        <Date ThisWeek="W20251110" NextWeek="W20251117">10-16 de novembro</Date>
+        <WeeklyBibleReading>CÂNTICO DE SALOMÃO 3-5</WeeklyBibleReading>
+        <ReviewQuestion></ReviewQuestion>
+        <MeetingDate Day="13" DayShort="qui" DayFull="quinta-feira" Month="11" MonthShort="nov" MonthFull="novembro" Year="2025">13/11/2025</MeetingDate>
+        <ChairmanNotes>
+            <OpeningComments/>
+            <ClosingComments IncludeNextWeeksStudents="0"/>
+        </ChairmanNotes>
+        <Chairman>Raphael Madeira</Chairman>
+        <VideoConferenceHost></VideoConferenceHost>
+        <VideoConferenceCohost></VideoConferenceCohost>
+        <ZoomAttendant></ZoomAttendant>
+        <SongOpen Title="Ande com Deus" StartTime12="7:45" StartTime24="19:45" EndTime12="7:50" EndTime24="19:50" DurationShort="5 min." Duration="5">31</SongOpen>
+        <PrayerOpen>Paulo Franco</PrayerOpen>
+        <OpeningComments>
+            <Theme>Comentários iniciais</Theme>
+            <Time StartTime12="7:50" StartTime24="19:50" EndTime12="7:51" EndTime24="19:51" DurationShort="1 min." Duration="1">1 min.</Time>
+        </OpeningComments>
+        <TFGW NumberClasses="1">
+            <TFGWItem Index="1">
+                <Theme>1. A importância da beleza interior</Theme>
+                <Method>Discurso</Method>
+                <Name>Miguel Mann Bernardo</Name>
+                <Time StartTime12="7:51" StartTime24="19:51" EndTime12="8:01" EndTime24="20:01" DurationShort="10 min." Duration="10">10 min.</Time>
+            </TFGWItem>
+            <TFGWItem Index="2">
+                <Theme>Joias espirituais</Theme>
+                <Method>Perguntas e Respostas</Method>
+                <Name>Giovani Vieira</Name>
+                <Time StartTime12="8:01" StartTime24="20:01" EndTime12="8:11" EndTime24="20:11" DurationShort="10 min." Duration="10">10 min.</Time>
+            </TFGWItem>
+            <BibleReadingItem Index="3">
+                <Type>Leitura da Bíblia</Type>
+                <Material StudyPoint="2" StudyPointReference="(Melhore lição 2)"> Cân. 4:1-16</Material>
+                <Time StartTime12="8:12" StartTime24="20:12" EndTime12="8:16" EndTime24="20:16" DurationShort="4 min." Duration="4">4 min ou menos</Time>
+                <Readers>
+                    <Reader StudyPoint="2" StudyPointDescription="Fale de coração" Class="1">Felipe Gobato</Reader>
+
+                </Readers>
+            </BibleReadingItem>
+        </TFGW>
+        <AYFM NumberClasses="1">
+            <StudentItem Index="4" IsTalk="0" IsSampleVideo="0">
+                <Type>4. Iniciando conversas</Type>
+                <Material Brochure="lmd" Lesson="6" StudyPoint="4" StudyPointReference="(lmd lição 6 ponto 4)">DE CASA EM CASA. Ofereça um estudo bíblico.</Material>
+                <Time StartTime12="8:17" StartTime24="20:17" EndTime12="8:20" EndTime24="20:20" DurationShort="3 min." Duration="3">3 min ou menos</Time>
+                <Students Class="1">
+                    <Student Lesson="6" StudyPoint="4" StudyPointDescription="Coragem">Anderson do Vale</Student>
+                    <Assistant>Bernardo</Assistant>
+                </Students>
+            </StudentItem>
+            <StudentItem Index="5" IsTalk="0" IsSampleVideo="0">
+                <Type>5. Iniciando conversas</Type>
+                <Material Brochure="lmd" Lesson="4" StudyPoint="3" StudyPointReference="(lmd lição 4 ponto 3)"> TESTEMUNHO INFORMAL. Mostre para a pessoa como encontrar informações no idioma dela no jw.org.</Material>
+                <Time StartTime12="8:21" StartTime24="20:21" EndTime12="8:25" EndTime24="20:25" DurationShort="4 min." Duration="4">4 min ou menos</Time>
+                <Students Class="1">
+                    <Student Lesson="4" StudyPoint="3" StudyPointDescription="Humildade">Gabriela Ribeiro</Student>
+                    <Assistant>Edilene Silva</Assistant>
+                </Students>
+            </StudentItem>
+            <StudentItem Index="6" IsTalk="0" IsSampleVideo="0">
+                <Type>6. Discurso</Type>
+                <Material Brochure="th" StudyPoint="1" StudyPointReference="(Melhore lição 1)">ijwbq artigo 131 — Tema: O que a Bíblia diz sobre usar maquiagem e joias?</Material>
+                <Time StartTime12="8:26" StartTime24="20:26" EndTime12="8:31" EndTime24="20:31" DurationShort="5 min." Duration="5">5 min ou menos</Time>
+                <Students Class="1">
+                    <Student StudyPoint="1" StudyPointDescription="Comece bem">Luiz Eleutério</Student>
+                    <Assistant></Assistant>
+                </Students>
+            </StudentItem>
+        </AYFM>
+        <LAC CircuitVisit="0" CircuitVisitGroup="0">
+            <SongMiddle Title="Proteja o coração" StartTime12="8:32" StartTime24="20:32" EndTime12="8:37" EndTime24="20:37" DurationShort="5 min." Duration="5">36</SongMiddle>
+            <LACItem Index="7">
+                <Name>Ederson Carneiro</Name>
+                <Theme>7. Case-se Somente no Senhor</Theme>
+                <Method>Vídeo</Method>
+                <Time StartTime12="8:37" StartTime24="20:37" EndTime12="8:45" EndTime24="20:45" DurationShort="8 min." Duration="8">8 min.</Time>
+            </LACItem>
+            <LACItem Index="8">
+                <Name>Marcos Woicjki</Name>
+                <Theme>8. Será que você seria um bom marido ou uma boa esposa?</Theme>
+                <Method>Consideração</Method>
+                <Time StartTime12="8:45" StartTime24="20:45" EndTime12="8:52" EndTime24="20:52" DurationShort="7 min." Duration="7">7 min.</Time>
+            </LACItem>
+            <CongregationBibleStudy Index="9">
+                <Conductor>Francinco Lezcano</Conductor>
+                <Reader>Gilmar de Lucas</Reader>
+                <SourceMaterial>lfb histórias 34-35</SourceMaterial>
+                <Time StartTime12="8:52" StartTime24="20:52" EndTime12="9:22" EndTime24="21:22" DurationShort="30 min." Duration="30">30 min ou menos</Time>
+            </CongregationBibleStudy>
+            <ClosingComments>
+                <Theme>Comentários finais</Theme>
+                <Time StartTime12="9:22" StartTime24="21:22" EndTime12="9:25" EndTime24="21:25" DurationShort="3 min." Duration="3">3 min ou menos</Time>
+            </ClosingComments>
+            <SongEnd Title="Oração de um servo aflito" StartTime12="9:25" StartTime24="21:25" EndTime12="9:30" EndTime24="21:30" DurationShort="5 min." Duration="5">44</SongEnd>
+            <PrayerEnd>Renato Horning</PrayerEnd>
+        </LAC>
+    </Meeting>
+    <Meeting BookmarkId="2" PageBreak="0" NumberClasses="1" SpecialEvent="0" CircuitVisit="0">
+        <Date ThisWeek="W20251117" NextWeek="W20251124">17-23 de novembro</Date>
+        <WeeklyBibleReading>CÂNTICO DE SALOMÃO 6-8</WeeklyBibleReading>
+        <ReviewQuestion></ReviewQuestion>
+        <MeetingDate Day="20" DayShort="qui" DayFull="quinta-feira" Month="11" MonthShort="nov" MonthFull="novembro" Year="2025">20/11/2025</MeetingDate>
+        <ChairmanNotes>
+            <OpeningComments/>
+            <ClosingComments IncludeNextWeeksStudents="0"/>
+        </ChairmanNotes>
+        <Chairman>Luiz Nogueira</Chairman>
+        <VideoConferenceHost></VideoConferenceHost>
+        <VideoConferenceCohost></VideoConferenceCohost>
+        <ZoomAttendant></ZoomAttendant>
+        <SongOpen Title="Andarei em integridade" StartTime12="7:45" StartTime24="19:45" EndTime12="7:50" EndTime24="19:50" DurationShort="5 min." Duration="5">34</SongOpen>
+        <PrayerOpen>Luiz Eleutério</PrayerOpen>
+        <OpeningComments>
+            <Theme>Comentários iniciais</Theme>
+            <Time StartTime12="7:50" StartTime24="19:50" EndTime12="7:51" EndTime24="19:51" DurationShort="1 min." Duration="1">1 min.</Time>
+        </OpeningComments>
+        <TFGW NumberClasses="1">
+            <TFGWItem Index="1">
+                <Theme>Seja uma muralha, não uma porta</Theme>
+                <Method>Discurso</Method>
+                <Name>Armando Vieira</Name>
+                <Time StartTime12="7:51" StartTime24="19:51" EndTime12="8:01" EndTime24="20:01" DurationShort="10 min." Duration="10">10 min.</Time>
+            </TFGWItem>
+            <TFGWItem Index="2">
+                <Theme>Joias espirituais</Theme>
+                <Method>Perguntas e Respostas</Method>
+                <Name>José Francisco</Name>
+                <Time StartTime12="8:01" StartTime24="20:01" EndTime12="8:11" EndTime24="20:11" DurationShort="10 min." Duration="10">10 min.</Time>
+            </TFGWItem>
+            <BibleReadingItem Index="3">
+                <Type>Leitura da Bíblia</Type>
+                <Material StudyPoint="12" StudyPointReference="(Melhore lição 12)">Cân. 7:1-13</Material>
+                <Time StartTime12="8:12" StartTime24="20:12" EndTime12="8:16" EndTime24="20:16" DurationShort="4 min." Duration="4">4 min ou menos</Time>
+                <Readers>
+                    <Reader StudyPoint="12" StudyPointDescription="Seja simpático e mostre que se importa" Class="1">João Batista</Reader>
+                </Readers>
+            </BibleReadingItem>
+        </TFGW>
+        <AYFM NumberClasses="1">
+            <StudentItem Index="4" IsTalk="0" IsSampleVideo="0">
+                <Type>Iniciando conversas</Type>
+                <Material Brochure="lmd" Lesson="4" StudyPoint="4" StudyPointReference="(lmd lição 4 ponto 4)">DE CASA EM CASA. Use um cartão de visita do site jw.org para iniciar uma conversa.</Material>
+                <Time StartTime12="8:17" StartTime24="20:17" EndTime12="8:19" EndTime24="20:19" DurationShort="2 min." Duration="2">2 min ou menos</Time>
+                <Students Class="1">
+                    <Student Lesson="4" StudyPoint="4" StudyPointDescription="Humildade">Camila Bernardo</Student>
+                    <Assistant>Isabela Vieira</Assistant>
+                </Students>
+            </StudentItem>
+            <StudentItem Index="5" IsTalk="0" IsSampleVideo="0">
+                <Type>Iniciando conversas</Type>
+                <Material Brochure="lmd" Lesson="1" StudyPoint="4" StudyPointReference="(lmd lição 1 ponto 4)">TESTEMUNHO PÚBLICO. Use um folheto para iniciar uma conversa em um território comercial.</Material>
+                <Time StartTime12="8:20" StartTime24="20:20" EndTime12="8:22" EndTime24="20:22" DurationShort="2 min." Duration="2">2 min ou menos</Time>
+                <Students Class="1">
+                    <Student Lesson="1" StudyPoint="4" StudyPointDescription="Interesse pelas pessoas">Daniele Rodrigues</Student>
+                    <Assistant>Fernanda Machado</Assistant>
+                </Students>
+            </StudentItem>
+            <StudentItem Index="6" IsTalk="0" IsSampleVideo="0">
+                <Type>Iniciando conversas</Type>
+                <Material Brochure="lmd" Lesson="2" StudyPoint="4" StudyPointReference="(lmd lição 2 ponto 4)">TESTEMUNHO INFORMAL. Comece uma conversa amigável com uma pessoa. A conversa termina antes de você conseguir dar testemunho.</Material>
+                <Time StartTime12="8:23" StartTime24="20:23" EndTime12="8:25" EndTime24="20:25" DurationShort="2 min." Duration="2">2 min ou menos</Time>
+                <Students Class="1">
+                    <Student Lesson="2" StudyPoint="4" StudyPointDescription="Naturalidade">Heitor Wojcik</Student>
+                    <Assistant>Lucas Daniel</Assistant>
+                </Students>
+            </StudentItem>
+            <StudentItem Index="7" IsTalk="0" IsSampleVideo="0">
+                <Type>Explicando suas crenças</Type>
+                <Material Brochure="th" StudyPoint="7" StudyPointReference="(Melhore lição 7)">Demonstração. ijwfq artigo 43 — Tema: As Testemunhas de Jeová têm regras sobre o namoro?</Material>
+                <Time StartTime12="8:26" StartTime24="20:26" EndTime12="8:31" EndTime24="20:31" DurationShort="5 min." Duration="5">5 min ou menos</Time>
+                <Students Class="1">
+                    <Student StudyPoint="7" StudyPointDescription="Use informações verdadeiras">Simone Machado</Student>
+                    <Assistant>Laura Franco</Assistant>
+                </Students>
+            </StudentItem>
+        </AYFM>
+        <LAC CircuitVisit="0" CircuitVisitGroup="0">
+            <SongMiddle Title="Precisamos ter autodomínio" StartTime12="8:32" StartTime24="20:32" EndTime12="8:37" EndTime24="20:37" DurationShort="5 min." Duration="5">121</SongMiddle>
+            <LACItem Index="8">
+                <Name>Luís Cláudio de Júlio</Name>
+                <Theme>Fuja da imoralidade sexual</Theme>
+                <Method>Consideração</Method>
+                <Time StartTime12="8:37" StartTime24="20:37" EndTime12="8:52" EndTime24="20:52" DurationShort="15 min." Duration="15">15 min.</Time>
+            </LACItem>
+            <CongregationBibleStudy Index="9">
+                <Conductor>Paulo Carvalho</Conductor>
+                <Reader>David Affonso</Reader>
+                <SourceMaterial>lfb histórias 36-37</SourceMaterial>
+                <Time StartTime12="8:52" StartTime24="20:52" EndTime12="9:22" EndTime24="21:22" DurationShort="30 min." Duration="30">30 min ou menos</Time>
+            </CongregationBibleStudy>
+            <ClosingComments>
+                <Theme>Comentários finais</Theme>
+                <Time StartTime12="9:22" StartTime24="21:22" EndTime12="9:25" EndTime24="21:25" DurationShort="3 min." Duration="3">3 min ou menos</Time>
+            </ClosingComments>
+            <SongEnd Title="Dedicamos nossa vida a Jeová" StartTime12="9:25" StartTime24="21:25" EndTime12="9:30" EndTime24="21:30" DurationShort="5 min." Duration="5">51</SongEnd>
+            <PrayerEnd>Marcos Woicjki</PrayerEnd>
+        </LAC>
+    </Meeting>
+    <Meeting BookmarkId="3" PageBreak="0" NumberClasses="1" SpecialEvent="0" CircuitVisit="0">
+        <Date ThisWeek="W20251124" NextWeek="W20251201">24-30 de novembro</Date>
+        <WeeklyBibleReading>ISAÍAS 1-2</WeeklyBibleReading>
+        <ReviewQuestion></ReviewQuestion>
+        <MeetingDate Day="27" DayShort="qui" DayFull="quinta-feira" Month="11" MonthShort="nov" MonthFull="novembro" Year="2025">27/11/2025</MeetingDate>
+        <ChairmanNotes>
+            <OpeningComments/>
+            <ClosingComments IncludeNextWeeksStudents="0"/>
+        </ChairmanNotes>
+        <Chairman>Marcos Ribeiro</Chairman>
+        <VideoConferenceHost></VideoConferenceHost>
+        <VideoConferenceCohost></VideoConferenceCohost>
+        <ZoomAttendant></ZoomAttendant>
+        <SongOpen Title="Oração de um servo aflito" StartTime12="7:45" StartTime24="19:45" EndTime12="7:50" EndTime24="19:50" DurationShort="5 min." Duration="5">44</SongOpen>
+        <PrayerOpen>Valdir Tadra</PrayerOpen>
+        <OpeningComments>
+            <Theme>Comentários iniciais</Theme>
+            <Time StartTime12="7:50" StartTime24="19:50" EndTime12="7:51" EndTime24="19:51" DurationShort="1 min." Duration="1">1 min.</Time>
+        </OpeningComments>
+        <TFGW NumberClasses="1">
+            <TFGWItem Index="1">
+                <Theme>Esperança para os que estão ‘carregados de erro’</Theme>
+                <Method>Discurso</Method>
+                <Name>Ederson Carneiro</Name>
+                <Time StartTime12="7:51" StartTime24="19:51" EndTime12="8:01" EndTime24="20:01" DurationShort="10 min." Duration="10">10 min.</Time>
+            </TFGWItem>
+            <TFGWItem Index="2">
+                <Theme>Joias espirituais</Theme>
+                <Method>Perguntas e Respostas</Method>
+                <Name>Aron Stachecka</Name>
+                <Time StartTime12="8:01" StartTime24="20:01" EndTime12="8:11" EndTime24="20:11" DurationShort="10 min." Duration="10">10 min.</Time>
+            </TFGWItem>
+            <BibleReadingItem Index="3">
+                <Type>Leitura da Bíblia</Type>
+                <Material StudyPoint="11" StudyPointReference="(Melhore lição 11)">Isa. 2:1-11</Material>
+                <Time StartTime12="8:12" StartTime24="20:12" EndTime12="8:16" EndTime24="20:16" DurationShort="4 min." Duration="4">4 min ou menos</Time>
+                <Readers>
+                    <Reader StudyPoint="11" StudyPointDescription="Fale de modo animado" Class="1">Nícolas</Reader>
+                </Readers>
+            </BibleReadingItem>
+        </TFGW>
+        <AYFM NumberClasses="1">
+            <StudentItem Index="4" IsTalk="0" IsSampleVideo="0">
+                <Type> Iniciando conversas</Type>
+                <Material Brochure="lmd" Lesson="3" StudyPoint="3" StudyPointReference="(lmd lição 3 ponto 3)">DE CASA EM CASA. Fale sobre uma das verdades do apêndice A da brochura Ame as Pessoas.</Material>
+                <Time StartTime12="8:17" StartTime24="20:17" EndTime12="8:20" EndTime24="20:20" DurationShort="3 min." Duration="3">3 min ou menos</Time>
+                <Students Class="1">
+                    <Student Lesson="3" StudyPoint="3" StudyPointDescription="Bondade">Miriam Affonso</Student>
+                    <Assistant>Rose de Jesus Coutinho</Assistant>
+                </Students>
+            </StudentItem>
+            <StudentItem Index="5" IsTalk="0" IsSampleVideo="0">
+                <Type>Cultivando o interesse</Type>
+                <Material Brochure="lmd" Lesson="7" StudyPoint="4" StudyPointReference="(lmd lição 7 ponto 4)">DE CASA EM CASA. Você se preparou para falar de um assunto, mas a pessoa quer falar sobre um assunto diferente.</Material>
+                <Time StartTime12="8:21" StartTime24="20:21" EndTime12="8:25" EndTime24="20:25" DurationShort="4 min." Duration="4">4 min ou menos</Time>
+                <Students Class="1">
+                    <Student Lesson="7" StudyPoint="4" StudyPointDescription="Perseverança">Arlene Trinco</Student>
+                    <Assistant>Emilly Carneiro</Assistant>
+                </Students>
+            </StudentItem>
+            <StudentItem Index="6" IsTalk="0" IsSampleVideo="0">
+                <Type>Discurso</Type>
+                <Material Brochure="th" StudyPoint="20" StudyPointReference="(Melhore lição 20)"> ijwbq artigo 96 — Tema: O que é pecado? </Material>
+                <Time StartTime12="8:26" StartTime24="20:26" EndTime12="8:31" EndTime24="20:31" DurationShort="5 min." Duration="5">5 min ou menos</Time>
+                <Students Class="1">
+                    <Student StudyPoint="20" StudyPointDescription="Faça uma boa conclusão">Elber Soares</Student>
+                    <Assistant></Assistant>
+                </Students>
+            </StudentItem>
+        </AYFM>
+        <LAC CircuitVisit="0" CircuitVisitGroup="0">
+            <SongMiddle Title="Jeová vai te dar força" StartTime12="8:32" StartTime24="20:32" EndTime12="8:37" EndTime24="20:37" DurationShort="5 min." Duration="5">38</SongMiddle>
+            <LACItem Index="7">
+                <Name>David Affonso</Name>
+                <Theme>Torne-se Amigo de Jeová — Jeová nos Perdoa</Theme>
+                <Method>Consideração</Method>
+                <Time StartTime12="8:37" StartTime24="20:37" EndTime12="8:52" EndTime24="20:52" DurationShort="15 min." Duration="15">15 min.</Time>
+            </LACItem>
+            <CongregationBibleStudy Index="8">
+                <Conductor>Paulo Franco</Conductor>
+                <Reader>Lucas Daniel</Reader>
+                <SourceMaterial> lfb história 38, introdução da seção 7 e história 39</SourceMaterial>
+                <Time StartTime12="8:52" StartTime24="20:52" EndTime12="9:22" EndTime24="21:22" DurationShort="30 min." Duration="30">30 min ou menos</Time>
+            </CongregationBibleStudy>
+            <ClosingComments>
+                <Theme>Comentários finais</Theme>
+                <Time StartTime12="9:22" StartTime24="21:22" EndTime12="9:25" EndTime24="21:25" DurationShort="3 min." Duration="3">3 min ou menos</Time>
+            </ClosingComments>
+            <SongEnd Title="Escute, obedeça e seja abençoado" StartTime12="9:25" StartTime24="21:25" EndTime12="9:30" EndTime24="21:30" DurationShort="5 min." Duration="5">89</SongEnd>
+            <PrayerEnd>Edson Padilha</PrayerEnd>
+        </LAC>
+    </Meeting>
+</MeetingWorkBook>
